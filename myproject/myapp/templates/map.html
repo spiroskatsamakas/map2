@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+{% load static %}
+<h1>The map and area elements</h1>
+
+<p>Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic:</p>
+
+<img src="{% static 'gr-05.jpg' %}" alt="gr-05" usemap="#workmap" width="780" height="585">
+
+<map name="workmap">
+  <area target="_blank" alt="θεσσαλία" title="θεσσαλία" href="http://simpleblog2.pythonanywhere.com/region/Hi%CE%98%CE%B5%CF%83%CF%83%CE%B1%CE%BB%CE%AF%CE%B1/" coords="889,936,1348,607" shape="rect">
+  <!area shape="rect" coords="290,172,333,250" alt="Phone" href="https://www.ependyseis.gr/">
+  <!area shape="circle" coords="337,300,44" alt="Cup of coffee" href="https://www.agrotypos.gr/">
+  <!area target="_blank" alt="ΕΝΑ" title="ΕΝΑ" href="https://www.agrotypos.gr" coords="390,290,100" shape="circle">
+  <!area target="_blank" alt="DYO" title="DYO" href="https://www.ypaithros.gr/" coords="190,290,190,600,500,290,500,190" shape="poly">
+  <area alt="Tria" title="Tria" href="https://www.ypaithros.gr/" coords="110,180 160,150 200,170 240,230 190,240 120,230 " shape="polygon">
+
+
+</map>
+
+</body>
+</html>
